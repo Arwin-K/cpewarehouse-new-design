@@ -49,7 +49,11 @@ const page = async () => {
                     <div className="flex w-full justify-center overflow-hidden">
                         <div className="w-full bg-gradient-to-b pt-8 sm:pt-[61px]">
                             <div className="p-4 sm:p-8">
-                                <img src="/assets/images/sign-up-banner.jpg" className="h-auto w-full rounded-2xl object-contain" alt="" />
+                                <img
+                                    src={imageUrl + heroImageSection?.image?.data?.attributes?.url}
+                                    className="aspect-[3/2] w-full rounded-2xl object-cover object-[center_80%]"
+                                    alt={heroImageSection?.image?.data?.attributes?.alternativeText || 'CPE Warehouse learning'}
+                                />
                             </div>
                         </div>
                     </div>
